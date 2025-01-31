@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Links</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 2rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: #2d3436;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        h1 {
+            color: #2d3436;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .student-id {
+            color: #636e72;
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .instructions {
+            color: #636e72;
+            font-size: 1rem;
+            background: rgba(255, 255, 255, 0.7);
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+
+        .assignments-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+
+        .assignment-card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .assignment-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .assignment-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .number {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: white;
+            margin-right: 1rem;
+        }
+
+        .assignment-card:nth-child(odd) .number {
+            background: linear-gradient(135deg, #00b894 0%, #00cec9 100%);
+        }
+
+        .assignment-card:nth-child(even) .number {
+            background: linear-gradient(135deg, #6c5ce7 0%, #a29bfe 100%);
+        }
+
+        .assignment-title {
+            font-size: 1.25rem;
+            color: #2d3436;
+            font-weight: 600;
+        }
+
+        .assignment-description {
+            color: #636e72;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        .desc {
+            color: #777777;
+            line-height: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+
+            .assignments-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Fayomi Kehinde</h1>
+            <h2 class="desc">All CSS Assignments</h2>
+            <div class="student-id">ALT/SOE/024/5441</div>
+            <div class="instructions">
+                Click on the card to open it.
+            </div>
+        </header>
+
+        <div class="assignments-grid">
+            <div class="assignment-card">
+                <div class="assignment-header">
+                    <div class="number">1</div>
+                    <div class="assignment-title"><a href="/Assignment 1/index.html" target="_blank" rel="noopener noreferrer">Assignment 1</a></div>
+                </div>
+                <div class="assignment-description">
+                    An "Otter Essay" webpage demonstrating css positioning.
+                </div>
+            </div>
+
+            <div class="assignment-card">
+                <div class="assignment-header">
+                    <div class="number">2</div>
+                    <div class="assignment-title"><a href="/Assignment-2/index.html" target="_blank" rel="noopener noreferrer">Assignment 2</a></div>
+                </div>
+                <div class="assignment-description">
+                    Huckleberry Agency page, showcasing css box model and responsiveness.
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
