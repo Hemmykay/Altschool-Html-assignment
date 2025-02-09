@@ -117,6 +117,25 @@
             line-height: 3rem;
         }
 
+        .assignment-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 0.5rem;
+        }
+
+        .assignment-link {
+            background: linear-gradient(135deg, #6c5ce7 0%, #a29bfe 100%);
+            color: #ffffff;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .assignment-link:hover {
+            background-color: #dfe4ea;
+        }
+
         @media (max-width: 768px) {
             body {
                 padding: 1rem;
@@ -153,13 +172,18 @@
             <div class="assignment-card">
                 <div class="assignment-header">
                     <div class="number">2</div>
-                    <div class="assignment-title"><a href="/Assignment 2/table.html" target="_blank" rel="noopener noreferrer">Assignment 2</a></div>
+                    <div class="assignment-title">Assignment 2</div>
                 </div>
                 <div class="assignment-description">
                     Course Table and Media
+                </div>
+                <div class="assignment-links">
+                    <a href="/Assignment 2/table.html" target="_blank" class="assignment-link">Table Assignment</a>
+                    <a href="/Assignment 2/media.html" target="_blank" class="assignment-link">Media Assignment</a>
                 </div>
             </div>
         </div>
     </div>
 </body>
 </html>
+
